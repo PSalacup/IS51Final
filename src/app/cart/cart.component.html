@@ -6,16 +6,16 @@
 
 <ul class="nav justify-content-end nav-action-container">
   <li class="nav-item">
-    <button mat-raised-button color="primary">Add Bike Model 1</button>
+    <button mat-raised-button color="primary" (click)="addB1">Add Bike Model 1</button>
   </li>
   <li class="nav-item">
-    <button mat-raised-button color="primary">Add Bike Model 2</button>
+    <button mat-raised-button color="primary" (click)="addB2">Add Bike Model 2</button>
   </li>
   <li class="nav-item">
-    <button mat-raised-button color="primary">Add Bike Model 3</button>
+    <button mat-raised-button color="primary" (click)="addB3">Add Bike Model 3</button>
     </li>
   <li class="nav-item">
-    <button mat-raised-button color="primary">Checkout</button>
+    <button mat-raised-button color="primary" (click)="computeTotal()">Checkout</button>
   </li>
 </ul>
 
@@ -46,8 +46,8 @@
       </mat-card-content>
       <mat-card-actions>
         <div class="btn-group pull-right">
-          <button mat-raised-button color="primary" class="pull-right">Save For Later</button>
-          <button mat-raised-button color="warn">Remove From Cart</button>
+          <button mat-raised-button color="primary" class="pull-right" (click)="saveItem()">Save For Later</button>
+          <button mat-raised-button color="warn" (click)="delete(i)">Remove From Cart</button>
         </div>
       </mat-card-actions>
     </mat-card>
